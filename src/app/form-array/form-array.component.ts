@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-array.component.scss']
 })
 export class FormArrayComponent implements OnInit {
-  formActive = true;
+  formActive = false;
+  listActive = false;
   sendArray: any;
 
   constructor() { }
@@ -15,11 +16,13 @@ export class FormArrayComponent implements OnInit {
   }
 
   openForm(value): void {
-    this.formActive = value;
+    this.formActive = value[0];
+    this.listActive = value[1];
   }
 
   getNames(data): void {
     this.sendArray =  data;
+    this.listActive = true;
   }
 
 }

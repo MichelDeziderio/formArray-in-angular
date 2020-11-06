@@ -61,7 +61,7 @@ export class DinamicFormComponent implements OnInit {
     }
 
     this.sendArray.emit(data);
-    this.disabledForm.emit(false);
+    this.disabledForm.emit([false, true]);
 
     while (this.d.length !== 0) {
       this.d.removeAt(0);

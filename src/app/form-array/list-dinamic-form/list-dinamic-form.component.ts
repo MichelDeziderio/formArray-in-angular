@@ -15,8 +15,8 @@ export class ListDinamicFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enableForm(value: boolean): void {
-    this.disabledForm.emit(value);
+  enableForm(value, value2: boolean): void {
+    this.disabledForm.emit([value, value2]);
   }
 
 }
