@@ -10,8 +10,8 @@
         <p class="mt-3">Neste projeto tem de forma fácil e prática de como se trabalhar com o FormArray do angular e vem
           com
           um bônus que é um dos maiores impecilhos de quem está inciando a sua carreira como Front-End Angular,
-          que é nada mais nada menos o nosso queridissímo e salva vidas EventEmitter ( input e output ).</p>
-        <p><button class="btn btn-primary" role="button" (click)="openForm(true)">Click aqui para testar</button></p>
+          que é nada mais nada menos que o nosso queridissímo e salva vidas EventEmitter ( input e output ).</p>
+        <p><button class="btn btn-primary" role="button" (click)="openForm([true,false])">Click aqui para testar</button></p>
       </div>
     </div>
   </div>
@@ -20,5 +20,5 @@
 <app-dinamic-form *ngIf="formActive" (sendArray)="getNames($event)" (disabledForm)="openForm($event)">
 </app-dinamic-form>
 
-<app-list-dinamic-form *ngIf="!formActive" [receiveArray]="sendArray" (disabledForm)="openForm($event)">
+<app-list-dinamic-form *ngIf="listActive" [receiveArray]="sendArray" (disabledForm)="openForm($event)">
 </app-list-dinamic-form>
