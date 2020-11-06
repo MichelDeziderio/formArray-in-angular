@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'formArray';
+  title = 'Aprenda como fazer FormArray com Angular';
 }
