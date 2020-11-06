@@ -1,0 +1,35 @@
+<section class="dinamic-list">
+  <div class="container">
+
+    <div class="row d-flex justify-content-center">
+
+      <div class="col-md-6">
+
+        <ul class="list-group">
+
+          <ng-container *ngFor="let item of receiveArray">
+
+            <li class="list-group-item"> {{ item.dinamic_names }} </li>
+
+          </ng-container>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container mt-4">
+
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center mb-2">
+
+        <button class="btn btn-success btn-lg" (click)="enableForm(true)"> Voltar ao formulário </button>
+
+      </div>
+    </div>
+
+  </div>
+</section>
