@@ -8,9 +8,9 @@ describe('ListDinamicFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListDinamicFormComponent ]
+      declarations: [ListDinamicFormComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -24,16 +24,17 @@ describe('ListDinamicFormComponent', () => {
   });
 
   it('Test EventEmitter disabledForm', () => {
-    const component = fixture.componentInstance; 
-    spyOn(component.disabledForm, 'emit');
- 
+    const componentBtn = fixture.componentInstance;
+    spyOn(componentBtn.disabledForm, 'emit');
+
+    const value = [ true, false ];
 
     const nativeElement = fixture.nativeElement;
     const button = nativeElement.querySelector('button');
     button.dispatchEvent(new Event('click'));
- 
+
     fixture.detectChanges();
- 
-    expect(component.disabledForm.emit).toHaveBeenCalledWith(true);
+
+    expect(componentBtn.disabledForm.emit).toHaveBeenCalledWith(value);
   });
 });

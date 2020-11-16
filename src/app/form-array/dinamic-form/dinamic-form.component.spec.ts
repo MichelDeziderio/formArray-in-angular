@@ -7,8 +7,6 @@ describe('DinamicFormComponent', () => {
   let component: DinamicFormComponent;
   let fixture: ComponentFixture<DinamicFormComponent>;
 
-  const removeFieldTest = [{ "dinamic_names": "" }]
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [DinamicFormComponent],
@@ -33,5 +31,5 @@ describe('DinamicFormComponent', () => {
     expect(component.removeField(0)).toBe(0);
     expect(component.removeField(1)).toBe(1);
   });
-  
+
 });
