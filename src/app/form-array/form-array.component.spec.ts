@@ -15,7 +15,7 @@ describe('FormArrayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [FormArrayComponent]
+      imports: [FormArrayComponent]
     })
       .compileComponents();
   }));
