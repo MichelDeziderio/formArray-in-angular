@@ -8,7 +8,7 @@ describe('ListDinamicFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ListDinamicFormComponent]
+      imports: [ListDinamicFormComponent]
     })
       .compileComponents();
   }));
